@@ -1,7 +1,7 @@
 export const config = {
   useMockServices: true,
   api: {
-    baseUrl: 'http://localhost:3000/api/v1',
+    baseUrl: import.meta.env.VITE_API_URL || 'http://localhost:3000/api/v1',
   },
   auth0: {
     domain: import.meta.env.VITE_AUTH0_DOMAIN || '',
