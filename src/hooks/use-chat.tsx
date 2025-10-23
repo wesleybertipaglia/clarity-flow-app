@@ -43,12 +43,16 @@ export const useChat = () => {
         userData,
         context,
         () => {
-          const updatedMessages = chatService.getMessages(user.id);
-          setMessages(updatedMessages);
+          if (user) {
+            const updatedMessages = chatService.getMessages(user.id);
+            setMessages(updatedMessages);
+          }
         }
       );
-      const updatedMessages = chatService.getMessages(user.id);
-      setMessages(updatedMessages);
+      if (user) {
+        const updatedMessages = chatService.getMessages(user.id);
+        setMessages(updatedMessages);
+      }
 
       return newMessage;
     } catch (error) {

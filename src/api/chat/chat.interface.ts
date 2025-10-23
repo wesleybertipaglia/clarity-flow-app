@@ -1,6 +1,6 @@
 import type { Message } from './types';
-import type { User } from '@/api/auth/types';
-import type { Company } from '@/api/auth/types';
+import type { User } from '@/api/users/types';
+import type { Company } from '@/api/company/types';
 import type { Task } from '@/api/tasks/types';
 import type { Sale } from '@/api/sales/types';
 

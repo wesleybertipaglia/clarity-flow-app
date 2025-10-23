@@ -50,7 +50,7 @@ export function Overview() {
           fontSize={12}
           tickLine={false}
           axisLine={false}
-          tickFormatter={(value) => `${value}`}
+          tickFormatter={(value: any) => `${value}`}
         />
         <Tooltip
           contentStyle={{

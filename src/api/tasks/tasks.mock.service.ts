@@ -1,5 +1,5 @@
 import type { Task } from './types';
-import type { User } from '@/api/auth/types';
+import type { User } from '@/api/users/types';
 import { tinid } from '@wesleybertipaglia/tinid';
 import type { ITaskService } from './tasks.interface';
 import { createTaskSchema, updateTaskSchema } from './tasks.schema';

@@ -1,5 +1,5 @@
 import type { Task } from './types';
-import type { User } from '@/api/auth/types';
+import type { User } from '@/api/users/types';
 
 export interface ITaskService {
   getAll(companyId: string): Task[];

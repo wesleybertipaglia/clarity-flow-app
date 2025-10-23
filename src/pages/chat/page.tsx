@@ -61,7 +61,7 @@ const COMMAND_DESCRIPTIONS: Record<string, string> = {
 };
 
 export default function ChatPage() {
-  const { user: currentUser } = useAuth();
+  const { currentUser } = useAuth();
   const { messages, addMessage, clearMessages } = useChat();
   const [input, setInput] = useState('');
   const [apiKey, setApiKey] = useState('');
@@ -231,7 +231,7 @@ export default function ChatPage() {
                         alt={currentUser.name}
                       />
                       <AvatarFallback>
-                        {getInitials(currentUser.name)}
+                        {getInitials(currentUser.name || '')}
                       </AvatarFallback>
                     </Avatar>
                   )}

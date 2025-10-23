@@ -1,5 +1,5 @@
 import type { Appointment } from './types';
-import type { User } from '@/api/auth/types';
+import type { User } from '@/api/users/types';
 import { tinid } from '@wesleybertipaglia/tinid';
 import type { IAppointmentService } from './appointments.interface';
 import {

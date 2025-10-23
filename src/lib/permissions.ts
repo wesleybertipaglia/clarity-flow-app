@@ -41,7 +41,7 @@ export function hasPermission(
     return true;
   }
 
-  const allowedResources = DEPARTMENT_RESOURCES[user.department] || [];
+  const allowedResources = user.department ? DEPARTMENT_RESOURCES[user.department] || [] : [];
 
   if (!allowedResources.includes(resource.resourceType)) {
     return false;
